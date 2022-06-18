@@ -1,0 +1,122 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+/* //---------------- CONTENEDOR DE TODO ----------------*/
+.container{
+    width: 300px;
+    height: 400px;
+    background-color: blanchedalmond;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    
+    
+}
+
+/* //---------------- INPUT ----------------*/
+
+.num1, .num2{
+    width: 280px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    font-size: 27.5px;
+    
+}
+
+.num2{
+    margin-bottom: 30px;
+}
+
+.num2:focus {
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgb(219, 54, 54);
+    
+}
+
+.num1:focus {
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgb(219, 54, 54);
+
+}
+/* //---------------- CONTENEDOR DE INPUT ----------------*/
+.container_input{
+    width: auto;
+    height: auto;
+}
+
+/* //---------------- CONTENEDOR DE BOTONES ----------------*/
+.container_button{
+    display: block;
+    width: auto;
+    height: 150px;
+}
+
+
+/* //---------------- CSS DE BOTONES ----------------*/
+.bnt{
+    width: 200px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(255, 202, 137);
+    border: 2px solid rgb(230,114,114);
+
+    transition: background-color 2s,border,border-radius 1s;
+}
+
+/* ********BOTON 1 *******/
+.bnt:hover{
+    background-color: rgb(255, 171, 68);
+    border: 2px solid rgb(230, 114, 114);
+    border-radius: 5px 5px 50px 50px;
+}
+
+.bnt:focus{
+    background-color: rgb(241, 138, 106);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* ********BOTON 2 *******/
+.bnt:nth-child(3){
+border-radius: 5px 5px 5px 5px;
+}
+
+.bnt:nth-child(3):hover {
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* ******BOTON 3 *******/
+.bnt:nth-child(1) {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.bnt:nth-child(1):hover {
+    border-radius: 50px 50px 5px 5px;
+}
+
+/*--------------- AQUI VIENE LOS NUMEROS ---------------*/
+
+
+.div_numero{
+    
+    width: auto;
+    height: 120px;
+    padding-top: 10px;
+}
+
+.resultado{
+    text-align: center;
+    font-size: 30px;
+}
