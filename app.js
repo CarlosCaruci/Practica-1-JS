@@ -10,17 +10,53 @@ function inicio(){
    boton.forEach((item)=>{
     item.addEventListener("click", 
     ()=>{
+
+        const dosValores = num1.value+num2.value;
+        const validarNumero=isNaN(dosValores)===false;
+
         if(item.innerHTML=="¿Son iguales?"){
-            if(num1.value===num2.value){resultado.innerHTML ="Son iguales"}
-            else{ resultado.innerHTML ="No son iguales"}}
+
+            
+
+            if(validarNumero){   
+                if(num1.value===num2.value)
+                {resultado.style.color="green",
+                resultado.innerHTML ="Son iguales"}
+                else{ resultado.innerHTML ="No son iguales";
+                resultado.style.color="blue"}
+            }
+
+            else(resultado.style.color="red",
+                resultado.innerHTML ="Ingresa solo valores numericos"
+            )
+            
+        }
 
 
          else if(item.innerHTML=="Numero mayor"){
-             resultado.innerHTML = Math.max(Number(num1.value), Number(num2.value)); 
+            if(validarNumero){
+                resultado.style.color="green",
+                resultado.innerHTML = Math.max(Number(num1.value), Number(num2.value));
+            } else( resultado.style.color="red",
+                    resultado.innerHTML ="Ingresa solo valores numericos")
+             
+              
         }
         
-         else if(item.innerHTML=="Numero menor"){resultado.innerHTML=Math.min(Number(num1.value), Number(num2.value))}
-         
+         else if(item.innerHTML=="Numero menor"){
+
+
+             if(validarNumero){
+                resultado.style.color="green",
+                resultado.innerHTML=Math.min(Number(num1.value), Number(num2.value))
+            } else( resultado.style.color="red",
+                    resultado.innerHTML ="Ingresa solo valores numericos")
+
+
+
+            
+         }
+          
          
         })
         
